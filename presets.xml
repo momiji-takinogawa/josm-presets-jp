@@ -78,7 +78,7 @@
       <check key="payment:smart_code" text="Smart Code" ja.text="Smart Code" match="keyvalue" disable_off="true" />
       <check key="payment:alipay" text="Alipay" ja.text="Alipay/支付宝" match="keyvalue" disable_off="true" />
       <check key="payment:wechat" text="WeChat Pay" ja.text="WeChat Pay/微信支付" match="keyvalue" disable_off="true" />
-      <check key="payment:unionpay_app" text="UnionPay" match="keyvalue" disable_off="true" />
+      <check key="payment:unionpay_app" text="UnionPay App" ja.text="UnionPay/云闪付" match="keyvalue" disable_off="true" />  <!-- unionpay_qr may be better -->
     </checkgroup>
 <!--
     <optional>
@@ -87,6 +87,7 @@
     </optional>
 -->
       <checkgroup text="Other QR code payment brands" ja.text="その他のQRコード決済のブランド" columns="4">
+        <!-- sort lexically -->
         <check key="payment:aeon_pay" text="AEON Pay" ja.text="AEON Pay" match="keyvalue" disable_off="true" />
         <check key="payment:bank_pay" text="Bank Pay" ja.text="Bank Pay" match="keyvalue" disable_off="true" />
         <check key="payment:coin_plus" text="COIN+" ja.text="COIN+/コインプラス" match="keyvalue" disable_off="true" />
@@ -98,6 +99,7 @@
       <!-- Stored-value cards that cannot be topped up -->
       <checkgroup text="Prepaid cards" ja.text="プリペイドカード" columns="4">
         <check key="payment:telephone_cards" text="Telephone cards" ja.text="テレホンカード" match="keyvalue" disable_off="true" />
+        <!-- sort lexically -->
         <check key="payment:quo_card" text="QUO Card" ja.text="QUOカード" match="keyvalue" disable_off="true" />
         <check key="payment:tosho_card" text="Tosho Card" ja.text="図書カード" match="keyvalue" disable_off="true" />
       </checkgroup>
@@ -112,6 +114,7 @@
       <space/>
       <!-- Electronic purses that are accepted by a chain or a small alliance of chains -->
       <checkgroup text="House e-purses" ja.text="独自電子マネー" columns="4">
+        <!-- sort lexically -->
         <check key="payment:majica" text="majica" ja.text="majica/マジカ" match="keyvalue" disable_off="true" />
         <check key="payment:mister_donut_card" text="Miter Donut Card" ja.text="ミスタードーナツカード" match="keyvalue" disable_off="true" />
         <check key="payment:mobiry_days" text="MOBIRY DAYS" ja.text="MOBIRY DAYS/モビリ–デイズ" match="keyvalue" disable_off="true" />
