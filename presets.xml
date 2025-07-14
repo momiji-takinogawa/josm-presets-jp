@@ -12,10 +12,11 @@
     <checkgroup text="Vending machine apps" ja.text="自販機アプリ" columns="4">
       <check key="payment:cokeon" text="Coke ON (Coca-Cola)" ja.text="コークオン (コカ・コーラ)" match="keyvalue" />
       <check key="payment:jihanpi" text="Jihanpi (Suntry)" ja.text="ジハンピ (サントリー)" match="keyvalue" />
+      <check key="payment:chacoco" text="CHACOCO (Itoen)" ja.text="チャココ (伊藤園)" match="keyvalue" />
     </checkgroup>
   </chunk>
 
-  <item name="Payment Methods (JP)" ja.name="支払手段 (JP)" type="node,way,closedway,multipolygon,relation" preset_name_label="true">
+  <item name="Payment Methods" ja.name="支払手段" type="node,way,closedway,multipolygon,relation" preset_name_label="true">
     <link wiki="Key:payment" />
     <space />
     <check key="payment:cash" text="Cash" ja.text="現金" match="keyvalue" />
@@ -83,7 +84,6 @@
       </checkgroup>
     </optional>
 -->
-    <optional>
       <checkgroup text="Other QR code payment brands" ja.text="その他のQRコード決済のブランド" columns="4">
         <check key="payment:aeon_pay" text="AEON Pay" ja.text="AEON Pay" match="keyvalue" disable_off="true" />
         <check key="payment:bank_pay" text="Bank Pay" ja.text="Bank Pay" match="keyvalue" disable_off="true" />
@@ -92,9 +92,7 @@
         <check key="payment:quo_card_pay" text="QUO Card Pay" ja.text="QUOカードPay" match="keyvalue" disable_off="true" />
         <check key="payment:tosho_card_next" text="Tosho Card NEXT" ja.text="図書カードNEXT" match="keyvalue" disable_off="true" />
       </checkgroup>
-    </optional>
     <space/>
-    <optional>
       <!-- Stored-value cards that cannot be topped up -->
       <checkgroup text="Prepaid cards" ja.text="プリペイドカード" columns="4">
         <check key="payment:telephone_cards" text="Telephone cards" ja.text="テレホンカード" match="keyvalue" disable_off="true" />
@@ -123,6 +121,5 @@
       </checkgroup>
       <space />
       <reference ref="payment_vending_machine_apps"/>
-    </optional>
   </item>
 </presets>
