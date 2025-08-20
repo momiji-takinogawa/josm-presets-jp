@@ -80,59 +80,59 @@
       <check key="payment:wechat" text="WeChat Pay" ja.text="WeChat Pay/微信支付" match="keyvalue" disable_off="true" />
       <check key="payment:unionpay_app" text="UnionPay App" ja.text="UnionPay/云闪付" match="keyvalue" disable_off="true" />  <!-- unionpay_qr may be better -->
     </checkgroup>
-<!--
-    <optional>
-      <checkgroup text="Smart Code-compatible payment brands" ja.text="Smart Code互換の決済ブランド" columns="4">
-      </checkgroup>
-    </optional>
--->
-      <checkgroup text="Other QR code payment brands" ja.text="その他のQRコード決済のブランド" columns="4">
-        <!-- sort lexically -->
-        <check key="payment:aeon_pay" text="AEON Pay" ja.text="AEON Pay" match="keyvalue" disable_off="true" />
-        <check key="payment:bank_pay" text="Bank Pay" ja.text="Bank Pay" match="keyvalue" disable_off="true" />
-        <check key="payment:coin_plus" text="COIN+" ja.text="COIN+/コインプラス" match="keyvalue" disable_off="true" />
-        <check key="payment:jko_pay" text="JKOPAY" ja.text="JKOPAY/口支付" match="keyvalue" disable_off="true" />
-        <check key="payment:quo_card_pay" text="QUO Card Pay" ja.text="QUOカードPay" match="keyvalue" disable_off="true" />
-        <check key="payment:tosho_card_next" text="Tosho Card NEXT" ja.text="図書カードNEXT" match="keyvalue" disable_off="true" />
-      </checkgroup>
+    <!--
+        <optional>
+        <checkgroup text="Smart Code-compatible payment brands" ja.text="Smart Code互換の決済ブランド" columns="4">
+        </checkgroup>
+        </optional>
+    -->
+    <checkgroup text="Other QR code payment brands" ja.text="その他のQRコード決済のブランド" columns="4">
+      <!-- sort lexically -->
+      <check key="payment:aeon_pay" text="AEON Pay" ja.text="AEON Pay" match="keyvalue" disable_off="true" />
+      <check key="payment:bank_pay" text="Bank Pay" ja.text="Bank Pay" match="keyvalue" disable_off="true" />
+      <check key="payment:coin_plus" text="COIN+" ja.text="COIN+/コインプラス" match="keyvalue" disable_off="true" />
+      <check key="payment:jko_pay" text="JKOPAY" ja.text="JKOPAY/口支付" match="keyvalue" disable_off="true" />
+      <check key="payment:quo_card_pay" text="QUO Card Pay" ja.text="QUOカードPay" match="keyvalue" disable_off="true" />
+      <check key="payment:tosho_card_next" text="Tosho Card NEXT" ja.text="図書カードNEXT" match="keyvalue" disable_off="true" />
+    </checkgroup>
     <space/>
-      <!-- Stored-value cards that cannot be topped up -->
-      <checkgroup text="Prepaid cards" ja.text="プリペイドカード" columns="4">
-        <check key="payment:telephone_cards" text="Telephone cards" ja.text="テレホンカード" match="keyvalue" disable_off="true" />
-        <!-- sort lexically -->
-        <check key="payment:quo_card" text="QUO Card" ja.text="QUOカード" match="keyvalue" disable_off="true" />
-        <check key="payment:tosho_card" text="Tosho Card" ja.text="図書カード" match="keyvalue" disable_off="true" />
-      </checkgroup>
-      <space/>
-      <!-- Paper gift cards -->
-      <checkgroup text="Gift cards" ja.text="ギフトカード" columns="4">
-        <check key="payment:jcb_gift_card" text="JCB Gift Card" ja.text="JCBギフトカード" match="keyvalue" disable_off="true" />
-        <check key="payment:uc_gift_card" text="UC Gift Card" ja.text="UCギフトカード" match="keyvalue" disable_off="true" />
-        <check key="payment:vja_gift_card" text="VJA Gift Card" ja.text="VJAギフトカード" match="keyvalue" disable_off="true" />
-        <check key="payment:vja_travel_gift_card" text="VJA Gift Card" ja.text="VJAトラベルギフトカード" match="keyvalue" disable_off="true" />
-      </checkgroup>
-      <space/>
-      <!-- Electronic purses that are accepted by a chain or a small alliance of chains -->
-      <checkgroup text="House e-purses" ja.text="独自電子マネー" columns="4">
-        <!-- sort lexically -->
-        <check key="payment:majica" text="majica" ja.text="majica/マジカ" match="keyvalue" disable_off="true" />
-        <check key="payment:mister_donut_card" text="Miter Donut Card" ja.text="ミスタードーナツカード" match="keyvalue" disable_off="true" />
-        <check key="payment:mobiry_days" text="MOBIRY DAYS" ja.text="MOBIRY DAYS/モビリ–デイズ" match="keyvalue" disable_off="true" />
-        <check key="payment:osaifu_hippo" text="Osaifu Hippo" ja.text="おさいふHippo" match="keyvalue" disable_off="true" />
-        <check key="payment:pecoma" text="Pecoma" ja.text="Pecoma/ペコママネー" match="keyvalue" disable_off="true" />
-        <check key="payment:starbucks_card" text="Starbucks Card" ja.text="スターバックスカード" match="keyvalue" disable_off="true" />
-        <check key="payment:tullys_card" text="TULLY'S Card" ja.text="TURRY'Sカード" match="keyvalue" disable_off="true" />
-        <check key="payment:yumeka" text="Yumeka" ja.text="ゆめか" match="keyvalue" disable_off="true" />
-      </checkgroup>
-      <space />
-      <!-- Online payments -->
-      <checkgroup text="Online payments" ja.text="独自電子マネー" columns="4">
-        <check key="payment:amazon_pay" text="Amazon Pay" ja.text="Amazon Pay" match="keyvalue" disable_off="true" />
-        <check key="payment:apple_pay" text="Apple Pay" ja.text="Apple Pay" match="keyvalue" disable_off="true" />
-        <check key="payment:google_pay" text="Google Pay" ja.text="Google Pay" match="keyvalue" disable_off="true" />
-        <check key="payment:paypal" text="PayPal" ja.text="PayPal" match="keyvalue" disable_off="true" />
-      </checkgroup>
-      <space />
-      <reference ref="payment_vending_machine_apps"/>
+    <!-- Stored-value cards that cannot be topped up -->
+    <checkgroup text="Prepaid cards" ja.text="プリペイドカード" columns="4">
+      <check key="payment:telephone_cards" text="Telephone cards" ja.text="テレホンカード" match="keyvalue" disable_off="true" />
+      <!-- sort lexically -->
+      <check key="payment:quo_card" text="QUO Card" ja.text="QUOカード" match="keyvalue" disable_off="true" />
+      <check key="payment:tosho_card" text="Tosho Card" ja.text="図書カード" match="keyvalue" disable_off="true" />
+    </checkgroup>
+    <space/>
+    <!-- Paper gift cards -->
+    <checkgroup text="Gift cards" ja.text="ギフトカード" columns="4">
+      <check key="payment:jcb_gift_card" text="JCB Gift Card" ja.text="JCBギフトカード" match="keyvalue" disable_off="true" />
+      <check key="payment:uc_gift_card" text="UC Gift Card" ja.text="UCギフトカード" match="keyvalue" disable_off="true" />
+      <check key="payment:vja_gift_card" text="VJA Gift Card" ja.text="VJAギフトカード" match="keyvalue" disable_off="true" />
+      <check key="payment:vja_travel_gift_card" text="VJA Gift Card" ja.text="VJAトラベルギフトカード" match="keyvalue" disable_off="true" />
+    </checkgroup>
+    <space/>
+    <!-- Electronic purses that are accepted by a chain or a small alliance of chains -->
+    <checkgroup text="House e-purses" ja.text="独自電子マネー" columns="4">
+      <!-- sort lexically -->
+      <check key="payment:majica" text="majica" ja.text="majica/マジカ" match="keyvalue" disable_off="true" />
+      <check key="payment:mister_donut_card" text="Miter Donut Card" ja.text="ミスタードーナツカード" match="keyvalue" disable_off="true" />
+      <check key="payment:mobiry_days" text="MOBIRY DAYS" ja.text="MOBIRY DAYS/モビリ–デイズ" match="keyvalue" disable_off="true" />
+      <check key="payment:osaifu_hippo" text="Osaifu Hippo" ja.text="おさいふHippo" match="keyvalue" disable_off="true" />
+      <check key="payment:pecoma" text="Pecoma" ja.text="Pecoma/ペコママネー" match="keyvalue" disable_off="true" />
+      <check key="payment:starbucks_card" text="Starbucks Card" ja.text="スターバックスカード" match="keyvalue" disable_off="true" />
+      <check key="payment:tullys_card" text="TULLY'S Card" ja.text="TURRY'Sカード" match="keyvalue" disable_off="true" />
+      <check key="payment:yumeka" text="Yumeka" ja.text="ゆめか" match="keyvalue" disable_off="true" />
+    </checkgroup>
+    <space />
+    <!-- Online payments -->
+    <checkgroup text="Online payments" ja.text="独自電子マネー" columns="4">
+      <check key="payment:amazon_pay" text="Amazon Pay" ja.text="Amazon Pay" match="keyvalue" disable_off="true" />
+      <check key="payment:apple_pay" text="Apple Pay" ja.text="Apple Pay" match="keyvalue" disable_off="true" />
+      <check key="payment:google_pay" text="Google Pay" ja.text="Google Pay" match="keyvalue" disable_off="true" />
+      <check key="payment:paypal" text="PayPal" ja.text="PayPal" match="keyvalue" disable_off="true" />
+    </checkgroup>
+    <space />
+    <reference ref="payment_vending_machine_apps"/>
   </item>
 </presets>
