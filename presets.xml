@@ -135,4 +135,167 @@
     <space />
     <reference ref="payment_vending_machine_apps"/>
   </item>
+
+  <chunk id="amenity_common">
+    <combo key="level" text="Level" ja.text="階" values="-5,-4,-3,-2,-1,0,1,2,3,4,5,6,7,8,9,10" />
+    <check key="indoor" text="Indoor" ja.text="屋内" />
+  </chunk>
+
+  <group name="Vending machines" ja.name="自販機">
+    <item name="ChargeSPOT" type="node" preset_name_label="true">
+      <key key="amenity" value="vending_machine" />
+      <key key="rental" value="power_bank" />
+      <key key="network" value="ChargeSPOT" />
+      <key key="name" value="ChargeSPOT" />
+      <key key="brand" value="ChargeSPOT" />
+      <key key="brand:wikidata" value="Q109366114" />
+      <key key="operator" value="INFORICH" />
+      <key key="operator:wikidata" value="Q135914906" />
+      <key key="authentication:app" value="yes" />
+      <reference ref="amenity_common"/>
+    </item>
+
+    <item name="充レン" type="node" preset_name_label="true">
+      <key key="amenity" value="vending_machine" />
+      <key key="rental" value="power_bank" />
+      <key key="network" value="充レン" />
+      <key key="name" value="充レン" />
+      <key key="brand" value="充レン" />
+      <key key="operator" value="JUREN" />
+      <key key="authentication:app" value="yes" />
+      <reference ref="amenity_common"/>
+    </item>
+
+    <item name="アイカサ" type="node" preset_name_label="true">
+      <key key="amenity" value="vending_machine" />
+      <key key="rental" value="umbrella" />
+      <key key="network" value="アイカサ" />
+      <key key="name" value="アイカサ" />
+      <key key="brand" value="アイカサ" />
+      <key key="operator" value="Nature Innovation Group" />
+      <key key="authentication:app" value="yes" />
+      <reference ref="amenity_common"/>
+    </item>
+
+    <item name="ベビカル" type="node" preset_name_label="true">
+      <key key="amenity" value="vending_machine" />
+      <key key="rental" value="stroller" />
+      <key key="name" value="ベビカル" />
+      <key key="brand" value="ベビカル" />
+      <key key="operator" value="ジェイアール東日本企画" />
+      <key key="reservation" value="yes" />
+      <key key="authentication:app" value="yes" />
+      <reference ref="amenity_common"/>
+    </item>
+  </group>
+
+  <group name="Lockers" ja.name="ロッカー">
+    <item name="マルチエキューブ" type="node" preset_name_label="true">
+      <key key="amenity" value="luggage_locker" />
+      <key key="name" value="マルチエキューブ" />
+      <key key="name:en" value="Multi-ecube" />
+      <key key="brand" value="マルチエキューブ" />
+      <key key="brand:en" value="Multi-ecube" />
+      <key key="operator" value="JR東日本スマートロジスティクス" />
+      <key key="fee" value="yes" />
+      <key key="reservation" value="yes" />
+      <key key="parcel_mail_in" value="yes" />
+      <key key="parcel_pickup" value="yes" />
+      <text key="local_ref" />
+      <reference ref="amenity_common"/>
+    </item>
+
+    <item name="Smari発送ステーション" type="node" preset_name_label="true">
+      <key key="amenity" value="parcel_locker" />
+      <key key="name" value="Smari発送ステーション" />
+      <key key="brand" value="Smari" />
+      <key key="operator" value="三菱商事" />
+      <key key="parcel_mail_in" value="yes" />
+      <key key="parcel_pickup" value="no" />
+      <reference ref="amenity_common"/>
+    </item>
+
+    <item name="KEY STATION" type="node" preset_name_label="true">
+      <key key="amenity" value="locker" />
+      <key key="locker" value="key" />
+      <key key="name" value="KEY STATION" />
+      <key key="brand" value="KEY STATION" />
+      <key key="operator" value="Keeyls" />
+      <key key="fee" value="yes" />
+      <key key="reservation" value="yes" />
+      <reference ref="amenity_common"/>
+    </item>
+
+    <item name="フジサービス" type="node" preset_name_label="true">
+      <key key="amenity" value="luggage_locker" />
+      <key key="operator" value="フジサービス" />
+      <key key="fee" value="yes" />
+      <key key="payment:coins" value="yes" />
+      <key key="payment:coins:denominations" value="100 JPY" />
+      <text key="capacity" default="" />
+      <text key="ref" />
+      <reference ref="amenity_common"/>
+    </item>
+  </group>
+
+  <group name="Working booths" ja.name="作業ブース">
+    <item name="STATION BOOTH (非会員利用可)" type="node" preset_name_label="true">
+      <key key="amenity" value="coworking_space" />
+      <key key="name" value="STATION BOOTH" />
+      <key key="brand" value="STATION WORK" />
+      <key key="brand:ja" value="ステーションワーク" />
+      <key key="operator" value="JR東日本ビルディング" />
+      <key key="operator:wikidata" value="Q11309017" />
+      <key key="fee" value="yes" />
+      <key key="payment:icsf" value="yes" />
+      <key key="capacity" value="1" />
+      <key key="covered" value="booth" />
+      <key key="reservation" value="yes" />
+      <text key="local_ref" />
+      <reference ref="amenity_common"/>
+    </item>
+
+    <item name="STATION BOOTH (会員専用)" type="node" preset_name_label="true">
+      <key key="amenity" value="coworking_space" />
+      <key key="name" value="STATION BOOTH" />
+      <key key="brand" value="STATION WORK" />
+      <key key="brand:ja" value="ステーションワーク" />
+      <key key="operator" value="JR東日本ビルディング" />
+      <key key="operator:wikidata" value="Q11309017" />
+      <key key="fee" value="yes" />
+      <key key="capacity" value="1" />
+      <key key="covered" value="booth" />
+      <key key="reservation" value="required" />
+      <text key="local_ref" />
+      <reference ref="amenity_common"/>
+    </item>
+  </group>
+
+  <group name="Personal mobility rental" ja.name="パーソナルモビリティレンタル">
+
+    <item name="LUUP" type="node,closedway,multipolygon" preset_name_label="true">
+      <key key="amenity" value="bicycle_rental" />
+      <key key="name" value="LUUP" />
+      <key key="brand" value="LUUP" />
+      <key key="network" value="LUUP" />
+      <key key="fee" value="yes" />
+      <key key="reservation" value="yes" />
+      <key key="authentication:app" value="yes" />
+      <text key="capacity" />
+      <reference ref="amenity_common"/>
+    </item>
+
+    <item name="Lime" type="node,closedway,multipolygon" preset_name_label="true">
+      <key key="amenity" value="bicycle_rental" />
+      <key key="name" value="Lime" />
+      <key key="brand" value="Lime" />
+      <key key="network" value="Lime" />
+      <key key="fee" value="yes" />
+      <key key="reservation" value="yes" />
+      <key key="authentication:app" value="yes" />
+      <text key="capacity" />
+      <reference ref="amenity_common"/>
+    </item>
+
+  </group>
 </presets>
