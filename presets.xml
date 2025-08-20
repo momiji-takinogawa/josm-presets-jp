@@ -201,7 +201,7 @@
       <key key="reservation" value="yes" />
       <key key="parcel_mail_in" value="yes" />
       <key key="parcel_pickup" value="yes" />
-      <text key="local_ref" />
+      <text key="local_ref" text="Local reference" ja.text="参照番号(ローカル)" />
       <reference ref="amenity_common"/>
     </item>
 
@@ -232,8 +232,8 @@
       <key key="fee" value="yes" />
       <key key="payment:coins" value="yes" />
       <key key="payment:coins:denominations" value="100 JPY" />
-      <text key="capacity" default="" />
-      <text key="ref" />
+      <text key="capacity" text="Capacity" ja.text="箱の数" />
+      <text key="ref" text="Reference" ja.text="参照番号" />
       <reference ref="amenity_common"/>
     </item>
   </group>
@@ -251,7 +251,7 @@
       <key key="capacity" value="1" />
       <key key="covered" value="booth" />
       <key key="reservation" value="yes" />
-      <text key="local_ref" />
+      <text key="local_ref" text="Local reference" ja.text="参照番号(ローカル)" />
       <reference ref="amenity_common"/>
     </item>
 
@@ -266,7 +266,7 @@
       <key key="capacity" value="1" />
       <key key="covered" value="booth" />
       <key key="reservation" value="required" />
-      <text key="local_ref" />
+      <text key="local_ref" text="Local reference" ja.text="参照番号(ローカル)" />
       <reference ref="amenity_common"/>
     </item>
   </group>
@@ -281,7 +281,7 @@
       <key key="fee" value="yes" />
       <key key="reservation" value="yes" />
       <key key="authentication:app" value="yes" />
-      <text key="capacity" />
+      <text key="capacity" text="Capacity" ja.text="駐車台数" />
       <reference ref="amenity_common"/>
     </item>
 
@@ -293,7 +293,7 @@
       <key key="fee" value="yes" />
       <key key="reservation" value="yes" />
       <key key="authentication:app" value="yes" />
-      <text key="capacity" />
+      <text key="capacity" text="Capacity" ja.text="駐車台数" />
       <reference ref="amenity_common"/>
     </item>
 
