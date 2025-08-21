@@ -139,6 +139,7 @@
   <chunk id="amenity_common">
     <combo key="level" text="Level" ja.text="階" values="-5,-4,-3,-2,-1,0,1,2,3,4,5,6,7,8,9,10" />
     <check key="indoor" text="Indoor" ja.text="屋内" />
+    <text key="opening_hours" text="Opening hours" ja.text="営業時間" />
   </chunk>
 
   <group name="Vending machines" ja.name="自販機">
