@@ -272,7 +272,6 @@
   </group>
 
   <group name="Personal mobility rental" ja.name="パーソナルモビリティレンタル">
-
     <item name="LUUP" type="node,closedway,multipolygon" preset_name_label="true">
       <key key="amenity" value="bicycle_rental" />
       <key key="name" value="LUUP" />
@@ -296,6 +295,37 @@
       <text key="capacity" text="Capacity" ja.text="駐車台数" />
       <reference ref="amenity_common"/>
     </item>
+  </group>
 
+  <group name="Recycling" ja.name="リサイクル">
+    <item name="インクカートリッジ 里帰りプロジェクト" type="node" preset_name_label="true">
+      <key key="amenity" value="recycling" />
+      <key key="recycling_type" value="container" />
+      <key key="recycling:ink_cartridges" value="yes" />
+      <key key="name" value="使用済みインクカートリッジ回収箱" />
+      <key key="brand" value="インクカートリッジ 里帰りプロジェクト" />
+      <reference ref="amenity_common"/>
+    </item>
+
+    <item name="乾電池回収箱 (豊島区)" type="node" preset_name_label="true">
+      <key key="amenity" value="recycling" />
+      <key key="recycling_type" value="container" />
+      <key key="recycling:batteries" value="yes" />
+      <key key="name" value="乾電池回収箱" />
+      <key key="operator" value="豊島区" />
+      <key key="operator:wikidata" value="Q236680" />
+      <reference ref="amenity_common"/>
+    </item>
+
+    <item name="蛍光灯・小型家電回収ボックス (豊島区)" type="node" preset_name_label="true">
+      <key key="amenity" value="recycling" />
+      <key key="recycling_type" value="container" />
+      <key key="recycling:small_electrical_appliances" value="yes" />
+      <key key="recycling:fluorescent_tubes" value="yes" />
+      <key key="name" value="蛍光灯・小型家電回収ボックス" />
+      <key key="operator" value="豊島区" />
+      <key key="operator:wikidata" value="Q236680" />
+      <reference ref="amenity_common"/>
+    </item>
   </group>
 </presets>
